@@ -107,7 +107,7 @@ Dataset: [Facebook Recruiting III - Keyword Extraction](https://www.kaggle.com/c
 
 - After Removing Duplicates we reset the index values.
 ### 4.4: Calculating Total Tags Present 
-  >Total Tags Present 12030708 
+  >Total Tags Present 12030708</br>
 >Average Number of Tags Present per Row 2.8959135600213175
 
 
