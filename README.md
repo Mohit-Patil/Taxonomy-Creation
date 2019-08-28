@@ -1,11 +1,24 @@
+
 # This is the Submission for Project for TCS HumAIn.
-Colab:https://colab.research.google.com/github/Mohit-Patil/Taxonomy-Creation/blob/master/Taxonomy.ipynb
+> Colab:https://colab.research.google.com/github/Mohit-Patil/Taxonomy-Creation/blob/master/Taxonomy.ipynb
 
 
 
 # **-----TAXONOMY CREATION-----**
 
 ## 1. Importing Libraries.
+>import pandas as pd</br>
+>import collections</br>
+>import random</br>
+>from bs4 import BeautifulSoup</br>
+>from nltk.corpus import stopwords</br>
+>import re</br>
+>from sklearn.preprocessing import MultiLabelBinarizer</br>
+>from sklearn.utils import shuffle</br>
+>import tensorflow as tf</br>
+>import nltk</br>
+>nltk.download('stopwords')</br>
+>nltk.download('punkt')</br>
 
   
 
@@ -94,13 +107,13 @@ Dataset: [Facebook Recruiting III - Keyword Extraction](https://www.kaggle.com/c
 
 - After Removing Duplicates we reset the index values.
 ### 4.4: Calculating Total Tags Present 
-  
+  >Total Tags Present 12030708 
+>Average Number of Tags Present per Row 2.8959135600213175
+
 
 ### 4.5: Frequently Occurring Tags
 
-  
-
-- List of tags which occur the most number of times.
+  - List of tags which occur the most number of times.
 
 - Freq_Tags : *size* = 100.
 
@@ -205,17 +218,17 @@ Dataset: [Facebook Recruiting III - Keyword Extraction](https://www.kaggle.com/c
 
   
 
-- The Model is a sequential model comprising of different Layers
+- The Model is a sequential model comprising of different Layers:
 
-- Input Layer(shape = 50)
+  - Input Layer(shape = 50)
 
-- Dense/ Fully Connected Layer(shape = 80)
+  - Dense/ Fully Connected Layer(shape = 80)
 
-- Dense/ Fully Connected Layer(shape = 140)
+  - Dense/ Fully Connected Layer(shape = 140)
 
-- Output Layer(shape = 100)
+  - Output Layer(shape = 100)
 
-- The First Three Layers use Relu Activation function whereas the last layer uses Sigmoid Activation function to output if a tag is related or not.</br>
+ - The First Three Layers use Relu Activation function whereas the last layer uses Sigmoid Activation function to output if a tag is related or not.</br>
 
 - Sigmoid outputs values between [0,1], so this tells of strong or how weak is a tag related.</br>
 
@@ -226,7 +239,7 @@ Dataset: [Facebook Recruiting III - Keyword Extraction](https://www.kaggle.com/c
 
   
 
-- The Model performs well on the cross validation set while training as well as test set.
+- The Model performs well on the cross validation set while training as well as on test set.
 
 - Accuracy = 98%
 - # Hardware and Software Used:
