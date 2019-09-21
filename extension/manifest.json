@@ -1,0 +1,27 @@
+{
+    "name": "Tag Prediction",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Get suggested ML tags for your Stack Overflow question!",
+    "homepage_url": "http://stackoverflow.com",
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "background": {
+      "page": "src/bg/background.html",
+      "persistent": true
+    },
+    "browser_action": {
+      "default_icon": "icons/icon128.png",
+      "default_title": "browser action demo",
+      "default_popup": "src/browser_action/browser_action.html"
+    },
+    "permissions": [
+      "clipboardRead",
+      "https://us-central1-decent-oxygen-242311.cloudfunctions.net/*",
+      "tabs",
+      "<all_urls>"
+    ]
+  }
